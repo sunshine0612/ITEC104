@@ -1,0 +1,57 @@
+using System;
+
+namespace Array_Program
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            int[]newarray1  = new int[5];
+            int[]newarray2  = new int[5];
+            int[]newarray3  = new int[5];
+            Console.WriteLine("My Array Program:\n");
+            for (int i =0; i < 5; i++)
+            {
+                Console.Write("Enter a number [{0}]: ",i);
+                
+                newarray1[i] = Convert.ToInt32(Console.ReadLine());
+            }
+             Console.ReadLine();
+                 
+    
+                int j =0, k = 0;
+                for (int i=0; i<newarray1.Length; i++)
+                {
+                    if ((newarray1[i]%2)==0)
+                    {
+                        newarray2[j] = newarray1[i];
+                            j++;
+                    }
+                    else
+                    {
+                        newarray3[k] = newarray1[i];
+                        k++;
+                    }
+                }
+                
+                Console.WriteLine("\n Even numbers are: \n");
+                for(int i= 0; i<j; i++)
+                {
+                    Console.Write("{0} ", newarray2[i] );
+                    
+                }
+                    Console.WriteLine();
+                    Console.WriteLine("\n Odd numbers are: \n");
+                for(int i= 0; i<k; i++)
+                {
+                    Console.Write("{0} ", newarray3[i] );
+                    
+                }
+                Console.ReadLine();
+                
+                
+            
+
+            }
+        }
+    }
