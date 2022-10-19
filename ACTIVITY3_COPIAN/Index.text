@@ -1,0 +1,29 @@
+using System;
+
+namespace Pairing_Array_by_Index
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            
+            string[] email = {"Sky@gmail.com","Sun@gmail.com","Star@gmail.com"};
+            
+            string[] username = {"Sky12", "Sun06", "Star01"};
+            
+            string[] password = {"blueSky@12", "Shinny@06", "Starlight@01"};
+            
+            Console.Write("Index    : ");
+            int index = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine(" Email     : " + email    [index]);
+            Console.WriteLine(" Username  : " + username [index]);
+            Console.WriteLine(" Password  : " + password [index]);
+            
+            Console.ReadLine();
+            
+            
+            
+        }
+    }
+}
