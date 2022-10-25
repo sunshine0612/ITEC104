@@ -1,0 +1,37 @@
+using System;
+
+namespace Struct
+{
+
+ struct Employee {
+    public int age;
+    
+    public string name;
+    public string lastname;
+    public string completetraining;
+
+
+    public Employee(int employeeAge, string employeeName , string employeeLastname , string employeecompletetraining )
+    {
+   
+      age = employeeAge;
+      name = employeeName;
+      lastname = employeeLastname;
+      completetraining = employeecompletetraining;
+    }
+  }
+ 
+  class Program {
+    static void Main(string[] args) {
+      Employee employee = new Employee(25, "Juan" ,"Dela Cruz" , "Yes");
+
+      Console.WriteLine(" Name:  " + employee.name);
+      Console.WriteLine(" Lastname: " + employee.lastname);
+      Console.WriteLine(" Age:  " + employee.age);
+      Console.WriteLine(" Complete training?:  " + employee.completetraining);
+
+      Console.ReadLine();
+      return;
+    }
+  }
+}
